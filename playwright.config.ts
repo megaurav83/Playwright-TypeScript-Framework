@@ -25,8 +25,12 @@ const testDir = defineBddConfig({
   steps: [
     'tests/steps/**/*.ts',
     //'tests/API_Tests/steps/**/*.ts',
-    'support/fixtures.ts', // explicitly include your fixture file
+    'Support/fixtures.ts', // explicitly include your fixture file
   ],
+  importTestFrom: {
+    file: 'Support/fixtures.ts',
+    varName: 'test',
+  },
 });
 
 

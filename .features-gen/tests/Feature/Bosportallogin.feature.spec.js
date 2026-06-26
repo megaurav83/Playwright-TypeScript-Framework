@@ -1,5 +1,5 @@
 // Generated from: tests\Feature\Bosportallogin.feature
-import { test } from "playwright-bdd";
+import { test } from "../../../Support/fixtures.ts";
 
 test.describe('Bosportal Login', () => {
 

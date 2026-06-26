@@ -1,12 +1,12 @@
 // Generated from: tests\Feature\SalesforceLogin.feature
-import { test } from "playwright-bdd";
+import { test } from "../../../Support/fixtures.ts";
 
 test.describe('Salesforce Login', () => {
 
-  test('Valid Login', { tag: ['@firsttest'] }, async ({ Given, When, Then, page }) => { 
-    await Given('I am on the Salesforce login page', null, { page }); 
-    await When('I enter valid credentials', null, { page }); 
-    await Then('I should be logged in successfully', null, { page }); 
+  test('Valid Login', { tag: ['@firsttest'] }, async ({ Given, When, Then, salesforcepage }) => { 
+    await Given('I am on the Salesforce login page', null, { salesforcepage }); 
+    await When('I enter valid credentials', null, { salesforcepage }); 
+    await Then('I should be logged in successfully', null, { salesforcepage }); 
   });
 
 });
