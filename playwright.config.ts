@@ -56,7 +56,7 @@ export default defineConfig({
     browserName: 'chromium',
     channel: 'chrome',
     trace: 'on-first-retry',
-     headless: process.env.CI ? true : false,
+     headless: true,
   },
 
   /* Configure projects for major browsers */
