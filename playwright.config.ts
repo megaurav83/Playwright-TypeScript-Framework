@@ -19,7 +19,7 @@ dotenv.config();
 
 const testDir = defineBddConfig({
   features: [
-    'tests/Feature/***.feature',
+    'tests/Feature/**/*.feature',
     //'tests/API_Tests/feature/***.feature',
   ],
   steps: [
